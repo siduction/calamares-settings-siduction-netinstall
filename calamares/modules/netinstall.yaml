@@ -82,6 +82,7 @@
         packages:
           - apt
           - aptitude
+          - nala
           - synaptic
       - name: "desktop integration"
         description: "Useful helper tools and libs for desktop usage"
