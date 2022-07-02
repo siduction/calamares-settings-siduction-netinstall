@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
+
+if [ -d /sys/firmware/efi/efivars ]; then
+    echo " * Replacing grub-pc with grub-efi..."
+    # grub-probe doesn't work in a chroot...
+    mv $CHROOT/usr/sbin/grub-probe $CHROOT/usr/sbin/grub-probe.bak
+    echo "exit 0" > $CHROOT/usr/sbin/grub-probe
+    chmod +x $CHROOT/usr/sbin/grub-probe
+    chroot $CHROOT apt-get --allow-unauthenticated -y install grub-efi
+    mv -f $CHROOT/usr/sbin/grub-probe.bak $CHROOT/usr/sbin/grub-probe
+fi

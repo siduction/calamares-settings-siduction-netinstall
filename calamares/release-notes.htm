@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <style>
+            body {
+                margin-left: 3em;
+                margin-right: 3em;
+                }
+            pre {
+                white-space: pre-line;
+                padding-left: 2.5em;
+                padding-right: 2.5em;
+                font-family:monospace;
+                font-size: 1.3em;
+                font-style: italic;
+                }
+            code{
+                font-size: 1.35em;
+                font-style: italic;
+                font-family:monospace;
+                font-weight: bold;
+                }
+             em {
+                font-size: 0.95em;
+                font-weight: bold;
+                }
+                
+            ul {
+                padding-left: 2.5em;
+                }
+            #author {
+                font-weight: bold;
+                }
+        </style>
+    <title>Release Notes for Farewell 2021.2.0</title>
+  </head>
+  <body>
+<main>
+        
+        <h3>In memoriam Axel Beu</h3>
+        
+        <p>For our good friend and sponsor, who left us much too young!</p>
+<br>
+        <h2>Release Notes for siduction 2021.2.0</h2>
+<br>
+<br>
+<img class="alignnone wp-image-2256" src="https://siduction.org/wp-content/uploads/2021/07/axel-300x225.png" alt="" width="645" height="484" />
+<br>
+<br>
+<br>
+The siduction team is very proud that for our 10th birthday (yes, we started out in July 2011) we can present to you siduction 2021.2.0. This one is dubbed »Farewell« in remembrance of our friend <a href="https://forum.siduction.org/index.php?topic=8283.0">Axel</a>, who passed away way to early. So no, farewell does not mean we are going anywhere. The highlight of this release is the resuscitated siduction manual, that goes back to the days of sidux, which some of you will remember as a former incarnation of siduction. We will go on a little history tour on that further down. But first things first.
+<h3>What's new this time around?</h3>
+The flavours we offer for siduction 2021.2 are KDE Plasma 5.20.5, LXQt 0.16.0-1, Cinnamon 4.8.6.2, Xfce 4.16, Lxde 11, Xorg and noX. GNOME and MATE did again not make it due to a lack of a maintainer within siduction. They might be back at some point or not. Of course, they are still installable from the repository.
+
+As you can tell, due to the freeze with regard to desktops not much has changed since our last release. The released images are a snapshot of Debian unstable, that also goes by the name of Sid, from 2021-07-28. They are enhanced with some useful packages and scripts, an installer based on Calamares and a custom patched version of the Linux kernel 5.13.6, while systemd is at 247.3-6.
+<h3>Plasma at the helm</h3>
+Plasma is still our main offering, and it has made remarkable progress over the past year. We have it staffed with the latest additions that will hit with Plasma 5.21 in a couple of weeks, like the new system monitor that will be the successor to ksysguard and the Conference Companion Kongress. Also, years in the making, finally there is kio-fuse.
+
+The latter allows you to mount remote directories into the root hierarchy of your local file system, thereby exposing KDE's access capabilities like SSH, SAMBA/Windows, FTP, TAR/GZip/BZip2, WebDav and others to POSIX-compliant applications such as Firefox, OpenOffice, GNOME apps, shell utilities and more. Quite the handy tool.
+
+As a special birthday treat, we have a 2nd image with Plasma on offer, that is based on the builds by Norbert Preining, featuring the latest and greatest Plasma 5.22.4. Norbert is the gentleman who also, together with the team of Debian-KDE-QT made sure that the soon-to-be released Debian 11 »Bullseye« will ship with Plasma 5.20, so you know you can trust their packages.
+
+This image also ships with Intels iNet Wireless Daemon (iwd) and doas as a substitute for sudo with a much smaller footprint and a human-readable config file that can be as small as just one line. You will find a description on how to set up iwd for Wi-Fi further down. To get started with doas, you can take a look at this <a href="https://linuxnews.de/2020/10/linux-rechtemanagement-sudo-durch-doas-ersetzen/">blog post</a>, which gets you started. For a more thorough introduction, you may want to look at <a href="https://www.linux-community.de/ausgaben/linuxuser/2021/08/mit-doas-statt-sudo-administrative-aufgaben-erledigen/">this article</a>. There you also find a workaround for the missing bash-completion for Debian, which was the only pain point with doas.
+<h3>siduction Manual</h3>
+We are immensely proud that for our birthday we can offer an up-to-date version of the siduction manual. It took countless hours to get it into shape and into a current state. While with this release the manual is in German only, we strive to finish the English version for our next release. Our Non-German spoken users can for now use the services of a translator like <a href="https://deepl.com">deepl</a>, which does an impressive job with technical translations.
+<h3>A bit of nostalgia</h3>
+Want to go on a nostalgic trip? Does someone remember sidux? That's where the then so called bluewater-manual started in 2006. Back then we started by taking topics from the sidux-faq and reorganizing them into a manual. Then Trevor Walkley, an Australian gentleman, who went by the nickname of bluewater to match his fondness for sailing, took the rudder and turned the manual into a great knowledge base and led a translation team that translated large parts into something like a dozen languages.
+
+The manual had one problem, and that was that it was built from static HTML pages. If there was no need to ever change anything, that would have been fine, but that is not the case. In 2013, there was an <a href="https://wiki.siduction.de/index.php?title=Siduction_Manual">attempt to fix this</a> by hamatoma, but that did not pan out the way it was planned. In 2020 Axel Konrad (akli) contacted us and declared, he wanted to fix the manual. And he did.
+
+In an enormous effort, he brought the entire sidu-manual up to date. As if that was not enough, he transferred it to Markdown (md), so it is easy to maintain and can be served as HTML or converted to PDF, depending on the need at hand. The software to do that kind of magic is <a href="https://pandoc.org/">Pandoc</a>. Meanwhile, we did a lot of proofreading with the output he produced, and yesterday we were done with the German part, just in time for the release.
+
+If anyone is able and willing to go over one or more of the outdated English manual pages, we would be truly grateful. We have a</span><span style="font-size: 1.125rem;"> </span><a style="font-size: 1.125rem;" href="https://github.com/siduction/sidu-manual/wiki/EN_Home">how-to-get-started</a><span style="font-size: 1.125rem;"> </span><span style="font-size: 1.125rem;">for you and a link to the</span><span style="font-size: 1.125rem;"> </span><a style="font-size: 1.125rem;" href="https://github.com/siduction/sidu-manual/wiki/EN_Status-manualpages">EN pages</a><span style="font-size: 1.125rem;">. Then we also need people for proofreading the translations once they are done. If you would like to help us get the EN manual fixed, please contact us on IRC on oftc (irc.oftc.net #siduction or #siduction-de) or in the forum board for the manual.</span>
+
+&nbsp;
+<h3>iNet Wireless Daemon</h3>
+The Xorg and noX flavors (preconfigured) and the 2nd Plasma image (not preconfigured) come with a new tool to connect your wireless devices. Intels iNet wireless daemon (iwd) sends WPA-Supplicant into well-earned retirement. Ten times smaller and a lot faster, iwd will be the successor. If you like, you can use iwd in the other flavors too, either on its own or within Network-Manager. Further information can be found in the Arch Linux wiki. If further tests go as expected, we plan to ship iwd with other flavours as well
+<h4>If you want to use wpa_supplicant instead of iwd follow the steps below:</h4>
+First stop and mask iwd.service, stop NetworkManager.service, rename /etc/NetworkManger/conf.d/nm.conf, unmask and start wpa_supplicant.service, start NetworkManager.service again:
+
+sudo systemctl stop iwd.service
+sudo systemctl mask iwd.service
+sudo systemctl stop NetworkManager.servicesudo mv /etc/NetworkManager/conf.d/nm.conf /etc/NetworkManager/conf.d/nm.conf~
+sudo systemctl unmask wpa_supplicant.service
+sudo systemctl enable --now wpa_supplicant.service
+sudo systemctl start NetworkManager.service
+
+Now you should be able to connect your wireless device with wpa_supplicant.
+<h3>Installing iwd</h3>
+If you like, you can use iwd in the other flavours too, either on its own or within Network-Manager. To easily set iwd up, use these steps:
+
+sudo apt update
+sudo apt install iwd
+sudo systemctl stop wpa_supplicant.service
+sudo systemctl mask wpa_supplicant.service
+sudo systemctl stop NetworkManager.service
+sudo touch /etc/NetworkManager/conf.d/nm.conf
+sudo echo -e '[device]\nwifi.backend=iwd' &gt; /etc/NetworkManager/conf.d/nm.conf
+sudo touch /etc/iwd/main.conf
+sudo echo -e '[General]\nEnableNetworkConfiguration=true\n\n[Network]\nNameResolvingService=systemd' &gt; /etc/iwd/main.conf
+sudo systemctl enable --now iwd.service
+sudo systemctl start NetworkManager.service
+
+Now you should be able to start an interactive shell by running iwctl from a terminal. Entering 'help' in the shell gives you all the options to list, scan and connect to your device or simply use nmtui or nmcli on the command line or the graphical-interface of Network-Manager.
+<h3>Official Releases and Test Builds</h3>
+Besides our official releases on our website, every so often we offer builds to keep the demand for fresh software for new installations covered. These images on testbuilds are unofficial and will continue to be tested only by booting and installing them, but that's the extent of testing for that platform. So far, there was no trouble with that scheme. You will still be able to find fresh releases of GNOME and MATE along with the others there about once per month.
+<h3>Non-free and Contrib</h3>
+The following non-free and contrib packages are installed by default:
+<h4>Non-Free</h4>
+amd64-microcode - Processor microcode firmware for AMD CPUs
+firmware-amd-graphics - Binary firmware for AMD/ATI graphics chips
+firmware-atheros - Binary firmware for Atheros wireless cards
+firmware-bnx2 - Binary firmware for Broadcom NetXtremeII
+firmware-bnx2x - Binary firmware for Broadcom NetXtreme II 10Gb
+firmware-brcm80211 - Binary firmware for Broadcom 802.11 wireless card
+firmware-crystalhd - Crystal HD Video Decoder (firmware)
+firmware-intelwimax - Binary firmware for Intel WiMAX Connection
+firmware-iwlwifi - Binary firmware for Intel Wireless cards
+firmware-libertas - Binary firmware for Marvell Libertas 8xxx wireless car
+firmware-linux-nonfree - Binary firmware for various drivers in the Linux kernel
+firmware-misc-nonfree - Binary firmware for various drivers in the Linux kernel
+firmware-myricom - Binary firmware for Myri-10G Ethernet adapters
+firmware-netxen - Binary firmware for QLogic Intelligent Ethernet (3000)
+firmware-qlogic - Binary firmware for QLogic HBAs
+firmware-realtek - Binary firmware for Realtek wired/wifi/BT adapters
+firmware-ti-connectivity - Binary firmware for TI Connectivity wireless network
+firmware-zd1211 - binary firmware for the zd1211rw wireless driver
+intel-microcode - Processor microcode firmware for Intel CPUs
+<h4>Contrib:</h4>
+b43-fwcutter - utility for extracting Broadcom 43xx firmware
+firmware-b43-installer - firmware installer for the b43 driver
+firmware-b43legacy-installer - firmware installer for the b43legacy driver
+iucode-tool - Intel processor microcode
+Return to non-free
+
+Right now, the installer does not offer an opt-out for packages that do not comply with DFSG, the Debian Free Software Guidelines. That means that non-free packages like unfree firmware will be installed by default on the system. The command vrms will list these packages for you. You can remove not wanted packages manually or remove them all by issuing apt purge $(vrms -s) before or after installation. Else our script remove-nonfree can do that for you.
+<h4>Installation hints and known issues</h4>
+* If you want to reuse your existing home (or any other data) partition, it would be wise to do so after installation and not in the Calamares Installer.
+* Encryption setups like LUKS and others are not yet supported by the Installer Framework, you should prepare your partition setup beforehand and might better use the cli-installer in a terminal.
+* With some Intel GPUs on some devices, you might encounter a frozen system on Live shortly after boot. To fix this, you need to set the kernel parameter <em>intel_iommu=igfx_off</em> before booting again.
+<h4>Credits for siduction 2021.2.0
+Core Team</h4>
+Torsten Wohlfarth (towo)
+Hendrik Lehmbruch (hendrikL)
+Ferdinand Thommes (devil)
+Vinzenz Vietzke (vinzv)
+
+Alf Gaida (agaida) (eaten by cats)
+Axel Beu (ab) 2021†
+<h4>Code, ideas and support:</h4>
+Axel Konrad (akli)
+der_bud
+Markus Meyer (coruja)
+Stefan Tell (cryptosteve]
+<h4>Original bluewater manual maintainers and translators:</h4>
+Trevor Walkley (bluewater)
+• Jose Tadeu Barros (ceti)
+• Alpha Mohamed Diakite (alphad)
+• Stefan R. Eissens (eislon)
+• Roland Engert (RoEn)
+• Alessio Giustini (alessiog75)
+• Markus Huber (hubi)
+• Luis_P
+• Janusz Martyniak (wiarus_old)
+• Philippe Masson (LjanA)
+• Mutsumu Nomura (muchan)
+• Rasmus Güllich Pørksen (ragupo)
+• Dawid Staropietka (DaVidoSS)
+• Bruno Torremans (btorrem)
+• Robert Ulatowski (quidam77)
+• Dorin Vatavu (dorin)
+• Bram Verdoodt (Bram0s)
+• Petr Vorel (pumrel)
+• zenren
+<h4></h4>
+<h4>Thank you all!</h4>
+We want to thank all testers and all the people giving us support over the years. This is also your achievement. We also want to thank Debian, as we are standing on the shoulders of giants.
+And now enjoy!
+
+On behalf of the siduction team:
+</main>
+        <footer><p id="author">Ferdinand Thommes</p></footer>
+  </body>
+</html>

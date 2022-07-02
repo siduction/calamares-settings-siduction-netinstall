@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "fllfixetc"
+interface:  "python"
+script:     "main.py"

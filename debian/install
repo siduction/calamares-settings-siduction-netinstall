@@ -1,0 +1,4 @@
+calamares   etc
+scripts/*   usr/sbin
+#modules     usr/lib/calamares
+#thanks highvoltage

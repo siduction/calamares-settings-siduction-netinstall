@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "fllmount"
+interface:  "python"
+script:     "main.py"

@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# wtfpl 2018-2019 Alf Gaida <agaida@siduction.org>
+
+modules='bootloader.conf
+         contextualprocess.conf
+         displaymanager.conf
+         dummycpp.conf
+         dummypython.conf
+         dummypythonqt.conf
+         finished.conf
+         fsresizer.conf
+         fstab.conf
+         grubcfg.conf
+         initcpio.conf
+         initcpiocfg.conf
+         initramfs.conf
+         interactiveterminal.conf
+         keyboard.conf
+         license.conf
+         locale.conf
+         luksopenswaphookcfg.conf
+         machineid.conf
+         mount.conf
+         netinstall.conf
+         openrcdmcryptcfg.conf
+         owncloud.conf
+         packagechooser.conf
+         packages.conf
+         partition.conf
+         plasmalnf.conf
+         plymouthcfg.conf
+         preservefiles.conf
+         rawfs.conf
+         removeuser.conf
+         services-openrc.conf
+         services-systemd.conf
+         shellprocess.conf
+         tracking.conf
+         umount.conf
+         unpackfs.conf
+         users.conf
+         webview.conf
+         welcome.conf'
+
+for i in $modules; do
+  echo "==== $i ===="
+  bcompare  calamares/modules/$i ../upstream/src/modules/*/$i
+  echo
+done

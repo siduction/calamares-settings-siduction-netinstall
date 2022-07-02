@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+DH_VERBOSE=1
+
+INST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install modules /usr/lib/$(INST_ARCH)/calamares
+	dh_install

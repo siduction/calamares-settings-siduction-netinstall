@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "fllexclusions"
+interface:  "python"
+script:     "main.py"
