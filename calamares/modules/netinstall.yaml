@@ -99,8 +99,8 @@
           - gstreamer1.0-plugins-ugly
           - libgsf-1-114
           - libopenraw7
-          - mlocate
           - libpoppler-glib8
+          - mlocate
           - xdg-user-dirs
           - xdg-utils
       - name: "filesystem"
@@ -120,14 +120,14 @@
         description: "Siduction font selection"
         selected: true
         packages:
-          - fonts-noto
-          - fonts-noto-hinted
-          - fonts-noto-unhinted
-          - fonts-noto-mono
-          - fonts-hack
-          - fonts-liberation
           - fonts-dejavu-core
           - fonts-dejavu-extra
+          - fonts-hack
+          - fonts-liberation
+          - fonts-noto
+          - fonts-noto-hinted
+          - fonts-noto-mono
+          - fonts-noto-unhinted
           - fonts-vlgothic
       - name: "audio"
         description: "Audio handling tools apps and libs"
@@ -136,10 +136,10 @@
           - alsa-firmware-loaders
           - alsa-utils
           - pavucontrol
-          - pipewire-pulse
-          - wireplumber
           - pipewire-audio-client-libraries
+          - pipewire-pulse
           - rtkit
+          - wireplumber
       - name: "hardware"
         description: "Hardware support libs and firmware"
         selected: true
