@@ -255,36 +255,47 @@
   selected: false
   critical: true
   packages:
-    - ark
-    - audiocd-kio
-    - bluedevil
-    - breeze-gtk
-    - dolphin
-    - dragon
-    - elisa
-    - gwenview
-    - kcalc
-    - kate
-    - kdeconnect
-    - kde-gtk-config
-    - khotkeys
-    - kinfocenter
-    - kinit
+    - adwaita-qt
+    - avahi-autoipd
+    - converseen
+    - dolphin-plugins
+    - gimp
+    - gnokii
+    - inkscape
+    - k3b-i18n
+    - kaffeine
+    - kde-config-gtk-style-preview
+    - kde-config-systemd
+    - kde-standard
+    - kde-zeroconf
+    - kdeadmin
+    - kdegraphics
+    - kdemultimedia
+    - kdenetwork
+    - kdepim
+    - kdetoys
     - kio-fuse
-    - konsole
-    - kscreen
-    - kwallet-pam
-    - okular
-    - plasma-desktop
-    - plasma-disks
-    - plasma-nm
-    - plasma-pa
-    - powerdevil
-    - print-manager
-    - sddm-kcm
-    - solid
-    - spectacle
-    - xsettingsd
+    - kompare
+    - konversation
+    - krusader
+    - ktorrent
+    - kwin-addons
+    - libreoffice
+    - libreoffice-plasma
+    - libreoffice-style-breeze
+    - network-manager-openconnect
+    - network-manager-openvpn
+    - network-manager-pptp
+    - network-manager-vpnc
+    - okteta
+    - phonon4qt5-backend-gstreamer
+    - pinentry-qt
+    - plasma-systemmonitor
+    - smplayer
+    - smtube
+    - vokoscreen-ng
+    - xdg-desktop-portal-kde
+    - yakuake
 - name: "LXQT-Desktop"
   description: "The Lightweight Qt Desktop Environment."
   hidden: false
