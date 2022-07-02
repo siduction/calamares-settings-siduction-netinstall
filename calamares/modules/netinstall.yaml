@@ -192,11 +192,10 @@
           - hwinfo
           - inxi
           - meld
-          - nano-syntax-highlighting
           - neofetch
           - pv
-          - python-defusedxml
-          - python-packaging
+          - python3-defusedxml
+          - python3-packaging
           - rsync
           - tldr
           - sed
@@ -209,7 +208,7 @@
   critical: false
   packages:
     - firefox
-    - firefox-i18n-$LOCALE
+    - firefox-l10n-$LOCALE
 - name: "XFCE4-Desktop"
   description: "XFCE4 - lightweight desktop fast and low on system resources, visually appealing and user friendly."
   hidden: false
