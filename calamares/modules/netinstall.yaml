@@ -144,16 +144,36 @@
         description: "Hardware support libs and firmware"
         selected: true
         packages:
-          - amd-ucode
+          - amd64-microcode
+          - bluetooth
+          - br2684ctl
+          - colord
           - dmidecode
           - dmraid
+          - eject
+          - ethtool
+          - firmware-linux
+          - firmware-sof-signed
           - hdparm
-          - hwdetect
-          - intel-ucode
+          - hwdata
+          - intel-microcode
+          - libusb-0.1-4
+          - lm-sensors
+          - lshw
           - lsscsi
+          - memtest86+
+          - mobile-broadband-provider-info
           - mtools
-          - sg3_utils
-          - sof-firmware
+          - pciutils
+          - pcmciautils
+          - powermgmt-base
+          - rfkill
+          - sdparm
+          - sg3-utils
+          - udev
+          - upower
+          - usb-modeswitch
+          - usbutils
       - name: "power"
         description: "Powermanagement support"
         selected: true
