@@ -133,14 +133,12 @@
         description: "Audio handling tools apps and libs"
         selected: true
         packages:
-          - alsa-firmware
-          - alsa-plugins
+          - alsa-firmware-loaders
           - alsa-utils
           - pavucontrol
           - pipewire-pulse
           - wireplumber
-          - pipewire-alsa
-          - pipewire-jack
+          - pipewire-audio-client-libraries
           - rtkit
       - name: "hardware"
         description: "Hardware support libs and firmware"
