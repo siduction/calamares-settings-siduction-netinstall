@@ -262,6 +262,7 @@
     - gimp
     - gnokii
     - inkscape
+    - k3b
     - k3b-i18n
     - kaffeine
     - kde-config-gtk-style-preview
@@ -276,7 +277,9 @@
     - kdetoys
     - kio-fuse
     - kompare
+    - kontact
     - konversation
+    - kopete
     - krusader
     - ktorrent
     - kwin-addons
@@ -291,6 +294,7 @@
     - phonon4qt5-backend-gstreamer
     - pinentry-qt
     - plasma-systemmonitor
+    - print-manager
     - smplayer
     - smtube
     - vokoscreen-ng
