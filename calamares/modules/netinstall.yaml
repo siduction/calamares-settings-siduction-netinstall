@@ -109,8 +109,8 @@
         packages:
           - efitools
           - haveged
-          - nfs-utils
-          - nilfs-utils
+          - libnfs-utils
+          - nilfs-tools
           - ntp
           - smartmontools
           - unrar
@@ -120,16 +120,15 @@
         description: "Siduction font selection"
         selected: true
         packages:
-          - adobe-source-han-sans-cn-fonts
-          - adobe-source-han-sans-jp-fonts
-          - adobe-source-han-sans-kr-fonts
-          - cantarell-fonts
-          - freetype2
-          - noto-fonts
-          - ttf-bitstream-vera
-          - ttf-dejavu
-          - ttf-liberation
-          - ttf-opensans
+          - fonts-noto
+          - fonts-noto-hinted
+          - fonts-noto-unhinted
+          - fonts-noto-mono
+          - fonts-hack
+          - fonts-liberation
+          - fonts-dejavu-core
+          - fonts-dejavu-extra
+          - fonts-vlgothic
       - name: "audio"
         description: "Audio handling tools apps and libs"
         selected: true
