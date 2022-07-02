@@ -333,19 +333,11 @@
   critical: true
   packages:
     - cups
-    - cups-filters
-    - cups-pdf
     - foomatic-db
-    - foomatic-db-engine
-    - foomatic-db-gutenprint-ppds
-    - foomatic-db-nonfree
-    - foomatic-db-nonfree-ppds
-    - foomatic-db-ppds
-    - ghostscript
-    - gsfonts
-    - gutenprint
-    - splix
-    - system-config-printer
+    - hpijs-ppds
+    - openprinting-ppds
+    - printer-driver-cups-pdf
+    - printer-driver-gutenprint
 - name: "Support for HP Printer/Scanner"
   description: "Extra Packages for HP Printer/Scanner"
   hidden: false
