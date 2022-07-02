@@ -97,11 +97,10 @@
           - gstreamer1.0-pipewire
           - gstreamer1.0-plugins-bad
           - gstreamer1.0-plugins-ugly
-          - libdvdcss
-          - libgsf
-          - libopenraw
+          - libgsf-1-114
+          - libopenraw7
           - mlocate
-          - poppler-glib
+          - libpoppler-glib8
           - xdg-user-dirs
           - xdg-utils
       - name: "filesystem"
