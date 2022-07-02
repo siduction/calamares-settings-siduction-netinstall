@@ -345,8 +345,8 @@
   packages:
     - cups
     - cups-filters
-    - hplip
     - hpijs-ppds
+    - hplip
     - printer-driver-cups-pdf
     - python3-pyqt5
     - python3-reportlab
