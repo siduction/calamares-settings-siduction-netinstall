@@ -9,13 +9,12 @@
         selected: true
         packages:
            - mesa-utils
-           - xf86-input-libinput
-           - xorg-xdpyinfo
-           - xorg-server
-           - xorg-xinit
-           - xorg-xinput
-           - xorg-xkill
-           - xorg-xrandr
+           - x11-utils
+           - x11-xserver-utils
+           - xinit
+           - xinput
+           - xserver-xorg-core
+           - xserver-xorg-input-libinput
       - name: "GPU drivers"
         description: "Graphics hardware drivers"
         selected: true
