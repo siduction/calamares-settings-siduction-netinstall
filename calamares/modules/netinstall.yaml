@@ -334,7 +334,6 @@
   packages:
     - cups
     - foomatic-db
-    - hpijs-ppds
     - openprinting-ppds
     - printer-driver-cups-pdf
     - printer-driver-gutenprint
@@ -344,13 +343,14 @@
   selected: false
   critical: true
   packages:
-    - hplip
-    - python-pyqt5
-    - python-reportlab
-    - xsane
     - cups
     - cups-filters
-    - cups-pdf
+    - hplip
+    - hpijs-ppds
+    - printer-driver-cups-pdf
+    - python3-pyqt5
+    - python3-reportlab
+    - xsane
 - name: "Accessibility Tools"
   description: "Screen reader and mouse tweaks (impaired vision)"
   hidden: false
