@@ -91,12 +91,12 @@
           - accountsservice
           - bash-completion
           - bluez
-          - bluez-utils
+          - bluez-tools
           - ffmpegthumbnailer
-          - gst-libav
-          - gst-plugin-pipewire
-          - gst-plugins-bad
-          - gst-plugins-ugly
+          - gstreamer1.0-libav
+          - gstreamer1.0-pipewire
+          - gstreamer1.0-plugins-bad
+          - gstreamer1.0-plugins-ugly
           - libdvdcss
           - libgsf
           - libopenraw
