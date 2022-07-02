@@ -28,36 +28,49 @@
         selected: true
         packages:
           - b43-fwcutter
-          - broadcom-wl-dkms
-          - dhclient
-          - dialog
-          - dnsmasq
           - dnsutils
-          - ethtool
-          - gnu-netcat
-          - ipw2100-fw
-          - ipw2200-fw
+          - firmware-atheros
+          - firmware-b43-installer
+          - firmware-b43legacy-installer
+          - firmware-bnx2
+          - firmware-bnx2x
+          - firmware-brcm80211
+          - firmware-intelwimax
+          - firmware-iwlwifi
+          - firmware-libertas
+          - firmware-myricom
+          - firmware-netxen
+          - firmware-qlogic
+          - firmware-realtek
+          - firmware-ti-connectivity
+          - firmware-zd1211
+          - ftp-ssl
+          - iftop
+          - iproute2
+          - iptables
+          - iputils-ping
+          - irssi
+          - irssi-scripts
+          - isc-dhcp-client
+          - iw
           - iwd
-          - modemmanager
-          - nbd
-          - ndisc6
-          - networkmanager
-          - networkmanager-openvpn
+          - libnss-mdns
+          - libnss-myhostname
+          - lynx
+          - net-tools
+          - netbase
+          - netselect
           - nmap
-          - nss-mdns
-          - openconnect
-          - openvpn
-          - ppp
-          - pptpclient
-          - rp-pppoe
+          - openssh-client
           - sshfs
-          - usb_modeswitch
-          - vpnc
-          - whois
+          - traceroute
+          - weechat
+          - weechat-scripts
+          - wget
           - wireless-regdb
-          - wireless_tools
-          - wpa_supplicant
-          - xl2tpd
+          - wireless-tools
+          - wpasupplicant
+          - wvdial
       - name: "firewall"
         description: "Firewall support"
         selected: true
