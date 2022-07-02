@@ -302,27 +302,30 @@
   selected: false
   critical: true
   packages:
-    - audiocd-kio
-    - baka-mplayer
-    - breeze
-    - breeze-gtk
-    - featherpad
-    - gvfs
-    - gvfs-mtp
-    - kio-fuse
-    - libstatgrab
-    - libsysstat
-    - lm_sensors
+    - 2048-qt
+    - adwaita-qt
+    - blueman
+    - gimp
+    - hardinfo
+    - hexchat
+    - inkscape
+    - libreoffice
+    - libreoffice-gtk3
     - lxqt
     - lxqt-archiver
-    - network-manager-applet
-    - oxygen-icons
-    - pavucontrol-qt
-    - print-manager
-    - qt5-translations
-    - xdg-utils
+    - lxqt-branding-siduction
+    - nomacs
+    - papirus-icon-theme
+    - phonon4qt5-backend-gstreamer
+    - plank
+    - qbittorrent
+    - screengrab
+    - sddm
+    - system-config-printer
+    - vokoscreen-ng
+    - xfburn
+    - xfwm4-theme-breeze
     - xscreensaver
-    - xsettingsd
 - name: "Printing-Support"
   description: "Support for printing (Cups)"
   hidden: false
