@@ -76,8 +76,6 @@
         selected: true
         packages:
           - firewalld
-          - python-pyqt5
-          - python-capng
       - name: "packages management"
         description: "Packages tools"
         selected: true
