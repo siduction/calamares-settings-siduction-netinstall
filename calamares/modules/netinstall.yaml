@@ -9,6 +9,9 @@
         selected: true
         packages:
            - mesa-utils
+           - siduction-irc
+           - siduction-manual
+           - siduction-scripts
            - x11-utils
            - x11-xserver-utils
            - xinit
