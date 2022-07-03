@@ -1,3 +1,16 @@
+calamares-branding-siduction-netinstall (22.1.0-4) unstable; urgency=medium
+
+  * fix fllremovevirt
+  * use local netinstall config
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 03 Jul 2022 18:48:03 +0200
+
+calamares-branding-siduction-netinstall (22.1.0-3) unstable; urgency=medium
+
+  * testbuild
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 03 Jul 2022 17:44:37 +0200
+
 calamares-branding-siduction-netinstall (22.1.0-2) unstable; urgency=medium
 
   * testbuild

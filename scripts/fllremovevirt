@@ -50,7 +50,7 @@ remove_virtualbox() {
 }
 
 # test bare metal
-i= $(virt-what)
+i=$(virt-what)
 [ "x$i" = "x" ] && isBare=true
 
 
