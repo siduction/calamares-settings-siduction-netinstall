@@ -26,6 +26,8 @@
           - xserver-xorg-video-ati
           - xserver-xorg-video-intel
           - xserver-xorg-video-radeon
+          - xserver-xorg-video-qxl
+          - xserver-xorg-video-vmware
       - name: "Network"
         description: "Network apps drivers and tools"
         selected: true
