@@ -120,7 +120,7 @@
           - smartmontools
           - unrar
           - unzip
-          - xz
+          - xz-utils
       - name: "fonts"
         description: "Siduction font selection"
         selected: true
@@ -204,7 +204,7 @@
           - rsync
           - sed
           - tldr
-          - vi
+          - vim
           - wget
 - name: "Firefox and language package"
   description: "Add firefox and language pack if possible"
