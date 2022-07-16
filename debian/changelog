@@ -1,3 +1,15 @@
+calamares-branding-siduction-netinstall (22.1.0-6) unstable; urgency=medium
+
+  * more work on packagechooser and netinstall
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 16 Jul 2022 13:27:06 +0200
+
+calamares-branding-siduction-netinstall (22.1.0-5) unstable; urgency=medium
+
+  * fix packages
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 03 Jul 2022 21:47:36 +0200
+
 calamares-branding-siduction-netinstall (22.1.0-4) unstable; urgency=medium
 
   * fix fllremovevirt
