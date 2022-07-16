@@ -141,7 +141,6 @@
           - alsa-firmware-loaders
           - alsa-utils
           - pavucontrol
-          - pipewire-audio-client-libraries
           - pipewire-pulse
           - rtkit
           - wireplumber

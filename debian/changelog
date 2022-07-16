@@ -1,3 +1,9 @@
+calamares-branding-siduction-netinstall (22.1.0-7) unstable; urgency=medium
+
+  * fix some packages and typos
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 16 Jul 2022 14:42:44 +0200
+
 calamares-branding-siduction-netinstall (22.1.0-6) unstable; urgency=medium
 
   * more work on packagechooser and netinstall
