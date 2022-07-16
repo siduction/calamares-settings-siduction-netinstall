@@ -244,14 +244,6 @@
          - system-config-printer
          - thunar-gtkhash
          - vokoscreen-ng
-         - xfce4
-         - xfce4-goodies
-         - xfce4-indicator-plugin
-         - xfce4-mpc-plugin
-         - xfce4-power-manager
-         - xfce4-screensaver
-         - xfce4-screenshooter
-         - xfce4-terminal
          - xfwm4-theme-breeze
 - name: "KDE-Desktop"
   description: "KDE-Plasma Desktop - Simple by default, powerful when needed."
