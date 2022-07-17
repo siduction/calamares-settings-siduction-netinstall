@@ -213,43 +213,37 @@
   packages:
     - firefox
     - firefox-l10n-$LOCALE
-- name: "XFCE4-Desktop"
-  description: "XFCE4 - lightweight desktop fast and low on system resources, visually appealing and user friendly."
+- name: "Usefull Applications"
+  description: "Applications for use with many desktops"
   hidden: false
   selected: false
   expanded: false
-  critical: true
   subgroups:
-      - name: "XFCE4-Desktop"
-        description: "XFCE4 needed packages"
-        selected: false
-        packages:
-         - audacious
-         - blueman
-         - evince
-         - faenza-icon-theme
-         - gimp
-         - greybird-gtk-theme
-         - hexchat
-         - inkscape
-         - libreoffice
-         - libreoffice-gtk3
-         - mate-calc
-         - mousepad
-         - network-manager-gnome
-         - pavucontrol
-         - screengrab
-         - smplayer
-         - smtube
-         - system-config-printer
-         - thunar-gtkhash
-         - vokoscreen-ng
-         - xfwm4-theme-breeze
-- name: "KDE-Desktop"
-  description: "KDE-Plasma Desktop - Simple by default, powerful when needed."
+    - audacious
+    - blueman
+    - evince
+    - faenza-icon-theme
+    - gimp
+    - greybird-gtk-theme
+    - hexchat
+    - inkscape
+    - libreoffice
+    - libreoffice-gtk3
+    - mate-calc
+    - mousepad
+    - network-manager-gnome
+    - pavucontrol
+    - screengrab
+    - smplayer
+    - smtube
+    - system-config-printer
+    - thunar-gtkhash
+    - vokoscreen-ng
+    - xfwm4-theme-breeze
+- name: "Additional applications for KDE"
+  description: "KDE-Plasma Applications - Simple by default, powerful when needed."
   hidden: false
   selected: false
-  critical: true
   packages:
     - adwaita-qt
     - avahi-autoipd
@@ -296,8 +290,8 @@
     - vokoscreen-ng
     - xdg-desktop-portal-kde
     - yakuake
-- name: "LXQT-Desktop"
-  description: "The Lightweight Qt Desktop Environment."
+- name: "Additional Applications forLXQT-Desktop"
+  description: "Additional Apps for The Lightweight Qt Desktop Environment."
   hidden: false
   selected: false
   critical: true
@@ -311,8 +305,6 @@
     - inkscape
     - libreoffice
     - libreoffice-gtk3
-    - lxqt
-    - lxqt-archiver
     - lxqt-branding-siduction
     - nomacs
     - papirus-icon-theme
