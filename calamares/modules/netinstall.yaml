@@ -1,11 +1,11 @@
-- name: "Desktop-Base + Common packages"
+- name: "Desktop Base + Common packages"
   description: "Recommended. Don't change unless you know what you're doing (generic)."
   hidden: false
   selected: true
   critical: true
   subgroups:
-      - name: "X-system"
-        description: "Default X-system"
+      - name: "X System"
+        description: "Default X System"
         selected: true
         packages:
            - mesa-utils
@@ -18,7 +18,7 @@
            - xinput
            - xserver-xorg-core
            - xserver-xorg-input-libinput
-      - name: "GPU drivers"
+      - name: "GPU Drivers"
         description: "Graphics hardware drivers"
         selected: true
         packages:
@@ -76,20 +76,20 @@
           - wireless-tools
           - wpasupplicant
           - wvdial
-      - name: "firewall"
+      - name: "Firewall"
         description: "Firewall support"
         selected: true
         packages:
           - firewalld
-      - name: "packages management"
-        description: "Packages tools"
+      - name: "Package Management"
+        description: "Graphical and terminal based package managing tools"
         selected: true
         packages:
           - apt
           - aptitude
           - nala
           - synaptic
-      - name: "desktop integration"
+      - name: "Desktop Integration"
         description: "Useful helper tools and libs for desktop usage"
         selected: true
         packages:
@@ -108,7 +108,7 @@
           - mlocate
           - xdg-user-dirs
           - xdg-utils
-      - name: "filesystem"
+      - name: "Filesystem"
         description: "Filesystem tools and apps"
         selected: true
         packages:
@@ -121,7 +121,7 @@
           - unrar
           - unzip
           - xz-utils
-      - name: "fonts"
+      - name: "Fonts"
         description: "Siduction font selection"
         selected: true
         packages:
@@ -134,8 +134,8 @@
           - fonts-noto-mono
           - fonts-noto-unhinted
           - fonts-vlgothic
-      - name: "audio"
-        description: "Audio handling tools apps and libs"
+      - name: "Audio"
+        description: "Audio handling tools, apps and libs"
         selected: true
         packages:
           - alsa-firmware-loaders
@@ -144,8 +144,8 @@
           - pipewire-pulse
           - rtkit
           - wireplumber
-      - name: "hardware"
-        description: "Hardware support libs and firmware"
+      - name: "Hardware"
+        description: "Hardware support libraries and firmware"
         selected: true
         packages:
           - amd64-microcode
@@ -178,13 +178,13 @@
           - upower
           - usb-modeswitch
           - usbutils
-      - name: "power"
+      - name: "Power"
         description: "Powermanagement support"
         selected: true
         packages:
           - power-profiles-daemon
           - upower
-      - name: "Siduction applications selection"
+      - name: "Siduction Applications Selection"
         description: "General tools and applications"
         selected: true
         packages:
@@ -205,15 +205,15 @@
           - tldr
           - vim
           - wget
-- name: "Firefox and language package"
-  description: "Add firefox and language pack if possible"
+- name: "Firefox"
+  description: "Add firefox and language pack, if possible"
   hidden: false
   selected: true
   critical: false
   packages:
     - firefox
     - firefox-l10n-$LOCALE
-- name: "Usefull Applications"
+- name: "Useful Applications"
   description: "Applications for use with many desktops"
   hidden: false
   selected: false
@@ -240,8 +240,8 @@
     - thunar-gtkhash
     - vokoscreen-ng
     - xfwm4-theme-breeze
-- name: "Additional applications for KDE"
-  description: "KDE-Plasma Applications - Simple by default, powerful when needed."
+- name: "Additional applications for KDE Plasma"
+  description: "KDE Plasma applications - Simple by default, powerful when needed."
   hidden: false
   selected: false
   packages:
@@ -250,7 +250,6 @@
     - converseen
     - dolphin-plugins
     - gimp
-    - gnokii
     - inkscape
     - k3b
     - k3b-i18n
@@ -290,8 +289,8 @@
     - vokoscreen-ng
     - xdg-desktop-portal-kde
     - yakuake
-- name: "Additional Applications forLXQT-Desktop"
-  description: "Additional Apps for The Lightweight Qt Desktop Environment."
+- name: "Additional Applications for LXQT Desktop"
+  description: "Additional apps for the lightweight Qt desktop environment."
   hidden: false
   selected: false
   critical: true
@@ -318,8 +317,8 @@
     - xfburn
     - xfwm4-theme-breeze
     - xscreensaver
-- name: "Printing-Support"
-  description: "Support for printing (Cups)"
+- name: "Printing Support"
+  description: "Support for printing with Cups"
   hidden: false
   selected: false
   critical: true
@@ -330,7 +329,7 @@
     - printer-driver-cups-pdf
     - printer-driver-gutenprint
 - name: "Support for HP Printer/Scanner"
-  description: "Extra Packages for HP Printer/Scanner"
+  description: "Extra packages for HP printers/scanners"
   hidden: false
   selected: false
   critical: true
