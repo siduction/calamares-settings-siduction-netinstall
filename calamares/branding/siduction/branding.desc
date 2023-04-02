@@ -7,11 +7,11 @@ windowSize: 1000px,700px
 strings:
     productName:         siduction
     shortProductName:    siduction
-    version:             2021.3.0
-    shortVersion:        2021.3.0
-    versionedName:       siduction 2021.3.0
-    shortVersionedName:  siduction 2021.3.0
-    bootloaderEntryName: siduction 2021.3.0
+    version:             2022.1.2
+    shortVersion:        2022.1.2
+    versionedName:       siduction 2022.1.2 "Masters of War" Release
+    shortVersionedName:  siduction 2022.1.2
+    bootloaderEntryName: siduction
 
 images:
     productLogo:         "siduction-logo.png"
@@ -21,6 +21,6 @@ images:
 slideshow:               "show.qml"
 
 style:
-   sidebarBackground:    "#032733"
+   sidebarBackground:    "#013C58"
    sidebarText:          "#FFFFFF"
    sidebarTextSelect:    "#021016"

@@ -1,4 +1,10 @@
-calamares-branding-siduction-netinstall (23.1.0-1) unstable; urgency=medium
+calamares-branding-siduction-netinstall (22.0.99-1) unstable; urgency=medium
+
+  * fix packagechooser_DE
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 02 Apr 2023 15:54:22 +0200
+
+calamares-branding-siduction-netinstall (22.1.0-1) unstable; urgency=medium
 
   [ Vinzenz Vietzke ]
   * Small extensions and corrections for package group descriptions and names
