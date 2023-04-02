@@ -1,3 +1,9 @@
+calamares-branding-siduction-netinstall (22.0.99-3) unstable; urgency=medium
+
+  * fix lxqt packages
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 02 Apr 2023 20:39:37 +0200
+
 calamares-branding-siduction-netinstall (22.0.99-2) unstable; urgency=medium
 
   * unrar ==> unrar-free
